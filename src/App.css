@@ -1,6 +1,6 @@
 /* App.css - Enhanced Modern Web Wallet Styles */
 :root {
-  --bg-primary: #0a0a0a;       /* Deeper black for main background */
+  --bg-primary: rgb(255, 255, 255);       /* Deeper black for main background */
   --bg-secondary: #111827;     /* Dark blue-gray for cards */
   --bg-tertiary: #1f2937;      /* Lighter card variant */
   --bg-accent: #374151;        /* Subtle accent background */
@@ -36,6 +36,11 @@
 * {
   box-sizing: border-box;
 }
+.App {
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+  min-height: 100vh;
+}
 
 body {
   background: var(--bg-primary);
@@ -51,7 +56,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .container {
   width: 100%;
   max-width: 480px;
